@@ -5,10 +5,10 @@ const root = new Vue(
         data: {
             bird: {
                 index: 0,
-                src: "images/01.jpg",
-                filesName: ['01', '02', '03', '04', '05'],
-                name: "Bird 1"
-            }
+                src: "images/" + this.bird.filesName[0] + ".jpg",
+                name: "Bird" + this.bird.filesName[0],
+                filesName: ['01', '02', '03', '04', '05']
+            },
         },
         methods: {
             next: function () {
