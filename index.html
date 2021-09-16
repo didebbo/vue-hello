@@ -16,14 +16,14 @@
 
     <div id="root">
         <div class="col">
-            <button>Prev</button>
+            <button @click="prev()">Prev</button>
         </div>
         <div class="col">
-            <h1>{{`${bird["name"]} ${bird["type"][0]}`}}</h1>
-            <img :src="`${bird['dir']}${bird['type'][0]}.jpg`" alt="">
+            <h1>{{bird.name}}</h1>
+            <img :src="bird.src" alt="">
         </div>
         <div class="col">
-            <button>Next</button>
+            <button @click="next()">Next</button>
         </div>
     </div>
 
