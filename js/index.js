@@ -6,6 +6,8 @@ const root = new Vue(
             bird: {
                 index: 0,
                 filesName: ['01', '02', '03', '04', '05'],
+                name: "Bird",
+                src: "images/",
             },
         },
         created: function () {
